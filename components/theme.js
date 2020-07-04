@@ -41,6 +41,13 @@ export default {
     container: 900,
     wide: 1280,
   },
+  layout: {
+    container: {
+      maxWidth: 'container',
+      mx: 'auto',
+      px: 3,
+    },
+  },
   text: {
     heading: {
       fontWeight: 'heading',
@@ -65,6 +72,7 @@ export default {
       transitionProperty: 'background-color',
       transitionTimingFunction: 'ease-out',
       transitionDuration: '.4s',
+      margin: 0,
     },
     a: {
       color: 'primary',

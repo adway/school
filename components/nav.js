@@ -15,7 +15,7 @@ const NavButton = ({ sx, ...props }) => (
   <IconButton
     {...props}
     sx={{
-      color: 'muted',
+      color: 'text',
       borderRadius: 'circle',
       transition: 'box-shadow .125s ease-in-out',
       ':hover,:focus': {
@@ -59,7 +59,7 @@ export default () => (
           fontWeight: 'body',
           textDecoration: 'none',
           mr: [3],
-          ':focus,:hover': { color: 'muted' },
+          ':focus,:hover': { color: 'primary' },
         },
       }}
     >
@@ -74,31 +74,14 @@ export default () => (
           <NavLink
             as='span'
             sx={{
-              display: ['none', 'inline-block'],
-              fontWeight: 'bold !important',
-              ':focus,:hover': { color: 'muted' },
+              display: 'inline-block',
+
+              ':focus,:hover': { color: 'primary' },
             }}
           >
-            Adway Wadekar
-          </NavLink>
-          <NavLink
-            as='span'
-            sx={{
-              display: ['inline-block', 'none'],
-              fontWeight: 'bold !important',
-              ':focus,:hover': { color: 'muted' },
-            }}
-          >
-            <Avatar size={55} src='/adway.png' />
+            school.adway.io
           </NavLink>
         </Flex>
-      </Link>
-
-      <Link href='/research' passHref>
-        <NavLink>Research</NavLink>
-      </Link>
-      <Link href='/journalism' passHref>
-        <NavLink>Journalism</NavLink>
       </Link>
       <ColorSwitcher />
     </Container>

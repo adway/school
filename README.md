@@ -1,3 +1,3 @@
 # school.adway.io
 
-A site for all fo my school notes.
+A site for all for my school notes.
