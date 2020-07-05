@@ -9,7 +9,7 @@ export default ({ allNotes }) => {
       {notes.length > 0 &&
         notes.map((note) => (
           <Box key={note.slug}>
-            <p>Hello, world</p>
+            <p>{note.title ? note.title : 'No Title'}</p>
           </Box>
         ))}
     </Container>
