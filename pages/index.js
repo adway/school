@@ -8,7 +8,7 @@ export default ({ allNotes }) => {
   return (
     <Container>
       <ul>
-        {allNotes.map(({ id, date, title }) => (
+        {allNotes.map(({ id, date, title, subject }) => (
           <li key={id}>
             {title}
             <br />
@@ -16,6 +16,7 @@ export default ({ allNotes }) => {
             <br />
             {date}
             <br />
+            {subject}
           </li>
         ))}
       </ul>
