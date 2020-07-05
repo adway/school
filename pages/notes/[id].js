@@ -1,10 +1,10 @@
 import { getAllNoteIds, getNoteData } from '../../lib/api';
 import { Container } from 'theme-ui';
 
-export default function Note() {
+export default function Note({ noteData }) {
   return (
     <Container>
-      <h1>Hello</h1>
+      <h1>{noteData.title}</h1>
     </Container>
   );
 }
@@ -19,4 +19,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const noteData = getNoteData(params.id);
+  return {
+    props: {
+      noteData,
+    },
+  };
 }
